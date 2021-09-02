@@ -32,6 +32,9 @@ class SearchTests {
         $("#subjectsInput").setValue("English").pressEnter();
         $x("//div[@id='subjectsContainer']//input").setValue("Chemistry").pressEnter();
         $x("//div[@id='subjectsContainer']//input").setValue("Arts").pressEnter();
+        $("#hobbies-checkbox-1").parent().click();
+        $("#hobbies-checkbox-2").parent().click();
+        $("#hobbies-checkbox-3").parent().click();
         $("#currentAddress").setValue("Нижний Новгород").pressEnter();
         $("#currentAddress").setValue("One love").pressEnter();
         $("#state").click();

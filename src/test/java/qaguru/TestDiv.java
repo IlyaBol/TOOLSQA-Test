@@ -15,6 +15,5 @@ class Practice {
         $("div h3").$(byText("Dynamic ID")).click();
         // Второе падает с ошибкой Element not found {div/h3}
         $("div").$("h3").$(byText("Dynamic ID")).click();
-
     }
 }

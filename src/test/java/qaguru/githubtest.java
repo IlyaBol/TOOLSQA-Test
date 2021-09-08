@@ -16,9 +16,8 @@ public class githubtest {
         $("#wiki-tab").click();
         // Перейти в Soft assertions
         $("#wiki-body").$(byText("Soft assertions")).click();
-        // Поиск Junit
+        // Поиск строки Junit
         $(".gollum-markdown-content").shouldHave(text("JUnit5 extension - "));
-
     }
 
 }

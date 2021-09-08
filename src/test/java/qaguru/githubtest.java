@@ -1,7 +1,9 @@
 package qaguru;
+
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.Condition.exist;
@@ -17,7 +19,8 @@ public class githubtest {
         // Перейти в Soft assertions
         $("#wiki-body").$(byText("Soft assertions")).click();
         // Поиск строки Junit
-        $(".gollum-markdown-content").shouldHave(text("JUnit5 extension - "));
+        $(".gollum-markdown-content").shouldHave(text("JUnit5 extension - "),
+                text("com.codeborne.selenide.junit5.SoftAssertsExtension"));
     }
 
 }

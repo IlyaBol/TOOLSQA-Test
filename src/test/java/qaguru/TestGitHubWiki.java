@@ -11,7 +11,7 @@ import static com.codeborne.selenide.Condition.text;
 
 public class TestGitHubWiki {
     @Test
-    void testGitHubWiki() {
+    void searchGitHubWiki() {
         // открыть страничку гитхаб
         open("https://github.com/selenide/selenide");
         // перейти на вики

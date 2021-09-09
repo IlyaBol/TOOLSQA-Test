@@ -9,9 +9,9 @@ import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.Condition.exist;
 import static com.codeborne.selenide.Condition.text;
 
-class TestGithubWiki {
+class TestGitHubWiki {
     @Test
-    void githubTestWiki() {
+    void testGitHubWiki() {
         // открыть страничку гитхаб
         open("https://github.com/selenide/selenide");
         // перейти на вики

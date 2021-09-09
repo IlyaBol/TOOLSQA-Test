@@ -9,7 +9,7 @@ import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.Condition.exist;
 import static com.codeborne.selenide.Condition.text;
 
-class Draganddrop {
+class TestDraganddrop {
     @Test
     void testDragAndDrop() {
         open("https://the-internet.herokuapp.com/drag_and_drop");

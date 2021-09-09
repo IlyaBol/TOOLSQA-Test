@@ -11,7 +11,7 @@ import static com.codeborne.selenide.Condition.text;
 
 public class TestDiv {
     @Test
-    void testDiv() {
+    void verificationDivAndH() {
         open("http://uitestingplayground.com/");
         // Первое значение отработает
         $("div h3").$(byText("Dynamic ID")).click();

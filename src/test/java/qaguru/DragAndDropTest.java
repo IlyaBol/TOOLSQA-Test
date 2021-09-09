@@ -9,9 +9,9 @@ import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.Condition.exist;
 import static com.codeborne.selenide.Condition.text;
 
-class TestDraganddrop {
+class DragAndDropTest {
     @Test
-    void testDragAndDrop() {
+    void dragAndDropTest() {
         open("https://the-internet.herokuapp.com/drag_and_drop");
         $("#column-a").dragAndDropTo("#column-b");
         $("#column-a").shouldHave(text("B"));

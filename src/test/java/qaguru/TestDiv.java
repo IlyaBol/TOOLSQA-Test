@@ -9,9 +9,9 @@ import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.Condition.exist;
 import static com.codeborne.selenide.Condition.text;
 
-class TestDragandDrop {
+class TestDiv{
     @Test
-    void testDragAndDrop() {
+    void testDiv() {
         open("http://uitestingplayground.com/");
         // Первое значение отработает
         $("div h3").$(byText("Dynamic ID")).click();

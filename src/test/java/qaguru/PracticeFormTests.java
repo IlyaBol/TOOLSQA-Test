@@ -16,7 +16,7 @@ public class PracticeFormTests{
     }
 
     @Test
-    void Tests () {
+    void testFormPractice () {
         open("https://demoqa.com/automation-practice-form");
         $("#firstName").setValue("Ilya");
         $("#lastName").setValue("Bogdanov");

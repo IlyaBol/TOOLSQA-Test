@@ -11,7 +11,7 @@ import static com.codeborne.selenide.Condition.text;
 
 public class DragAndDropTest {
     @Test
-    void dragAndDropTest() {
+    void examinationDragAndDrop() {
         open("https://the-internet.herokuapp.com/drag_and_drop");
         $("#column-a").dragAndDropTo("#column-b");
         $("#column-a").shouldHave(text("B"));

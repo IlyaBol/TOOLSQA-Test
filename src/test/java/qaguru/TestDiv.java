@@ -9,7 +9,7 @@ import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.Condition.exist;
 import static com.codeborne.selenide.Condition.text;
 
-class TestDiv{
+public class TestDiv {
     @Test
     void testDiv() {
         open("http://uitestingplayground.com/");

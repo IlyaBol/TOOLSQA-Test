@@ -15,6 +15,7 @@ public class TestDiv {
         open("http://uitestingplayground.com/");
         // Первое значение отработает
         $("div h3").$(byText("Dynamic ID")).click();
+        $("#navbarSupportedContent").$(byText("Home")).click();
         // Второе падает с ошибкой Element not found {div/h3}
         $("div").$("h3").$(byText("Dynamic ID")).click();
     }

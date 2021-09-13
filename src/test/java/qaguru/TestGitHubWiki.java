@@ -12,13 +12,11 @@ import static com.codeborne.selenide.Condition.text;
 public class TestGitHubWiki {
     @Test
     void searchGitHubWiki() {
-        // открыть страничку гитхаб
+
         open("https://github.com/selenide/selenide");
-        // перейти на вики
         $("#wiki-tab").click();
-        // Перейти в Soft assertions
-        $("#wiki-body").$(byText("Soft assertions")).click();
-        // Поиск строки Junit
+        $("#wiki-pages-filter").setValue("SoftAssertions").pressEnter();
+        $(byText("SoftAssertions")).click();
         $(".gollum-markdown-content").shouldHave(text("JUnit5 extension - "),
                 text("com.codeborne.selenide.junit5.SoftAssertsExtension"));
     }

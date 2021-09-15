@@ -17,8 +17,8 @@ public class TestGitHubWiki {
         $("#wiki-tab").click();
         $("#wiki-pages-filter").setValue("SoftAssertions").pressEnter();
         $(byText("SoftAssertions")).click();
-        $(".gollum-markdown-content").shouldHave(text("JUnit5 extension - "),
-                text("com.codeborne.selenide.junit5.SoftAssertsExtension"));
+        $(".markdown-body").shouldHave(text("Using JUnit5 extend test class:"));
+        $(".markdown-body").shouldHave(text("@ExtendWith({SoftAssertsExtension.class})"));
     }
 
 }
